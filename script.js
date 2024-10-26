@@ -1,7 +1,7 @@
 async function generateImages() {
     const imageContainer=document.getElementById("imageContainer");
     const prompt=document.getElementById("imagePrompt").value.trim();
-    const accessKey='R41r-SnNCxTj-GRJImrB-pl-7hyKcGjmgJyHa6W13bY'; // Replace with your Unsplash API Key
+    const accessKey='R41r-SnNCxTj-GRJImrB-pl-7hyKcGjmgJyHa6W13bY';
     imageContainer.innerHTML='';
     if (!prompt) {
         alert("Please enter an image description.");
@@ -15,7 +15,6 @@ async function generateImages() {
             alert("No images found for this description.");
             return;
         }
-        // Display images in the container
         data.results.forEach((result, index) => {
             const img = document.createElement("img");
             img.src = result.urls.small;
