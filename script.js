@@ -1,7 +1,7 @@
 async function generateImages() {
     const imageContainer=document.getElementById("imageContainer");
     const prompt=document.getElementById("imagePrompt").value.trim();
-    const accessKey='R41r-SnNCxTj-GRJImrB-pl-7hyKcGjmgJyHa6W13bY';
+    const accessKey='enter your access key';.
     imageContainer.innerHTML='';
     if (!prompt) {
         alert("Please enter an image description.");
